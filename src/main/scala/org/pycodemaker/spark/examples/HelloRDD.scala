@@ -1,4 +1,4 @@
-package org.pycodemaker.spark.rdd
+package org.pycodemaker.spark.examples
 
 import org.apache.log4j.Logger
 import org.apache.spark.{SparkConf, SparkContext}

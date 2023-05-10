@@ -1,10 +1,11 @@
-package org.pycodemaker.spark.dataset
+package org.pycodemaker.spark.examples
+
 import org.apache.log4j.Logger
 import org.apache.spark.sql.{Dataset, Row, SparkSession}
 
 case class SurveyRecord(Age: Int, Gender: String, Country: String, state: String)
 
-class HelloDataset extends Serializable {
+object HelloDataset extends Serializable {
   @transient lazy val logger: Logger = Logger.getLogger(getClass.getName)
 
   def main(args: Array[String]): Unit = {
