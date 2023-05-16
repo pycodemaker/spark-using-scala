@@ -5,8 +5,12 @@ ThisBuild / scalaVersion := "2.12.14"
 val sparkVersion = "3.3.1"
 
 val sparkDependencies = Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-sql" % sparkVersion
+  "io.delta"                      %% "delta-core"           % "2.3.0",
+  "org.apache.spark"              %% "spark-core"           % sparkVersion,
+  "org.apache.spark"              %% "spark-sql"            % sparkVersion,
+  "org.apache.spark"              %% "spark-hive"           % sparkVersion,
+  "org.apache.hadoop"             % "hadoop-aws"            % sparkVersion,
+
 )
 
 val testDependencies = Seq(
